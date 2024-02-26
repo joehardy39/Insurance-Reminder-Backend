@@ -12,7 +12,7 @@ exports.signup = (req, res) => {
   const pass = bcrypt.hashSync(req.body.password, 8);
   const user = new User({
     fname: req.body.fname,
-    lnamr: req.body.lname,
+    lname: req.body.lname,
     email: req.body.email,
     password: pass
   });
